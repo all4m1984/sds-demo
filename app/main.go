@@ -73,7 +73,7 @@ func makeRouter() *gin.Engine {
 	r.Use(options)
 
 	r.GET("/", func(c *gin.Context) {
-		c.String(http.StatusOK, "Hello")
+		c.String(http.StatusOK, "Hello World")
 	})
 
 	api := r.Group("/api")
